@@ -1,0 +1,114 @@
+*{
+	padding:0;
+	margin:0;
+    box-sizing: border-box;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+
+a{
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+h5{
+    color: rgb(163, 163, 163);
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+	background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+	width: 100%;
+	font: bold 16px sans-serif;
+	padding: 40px;
+}
+
+.footer-top, .footer-left, .left-item{
+    display: grid;
+}
+
+.footer-top{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer-brand{
+    margin-bottom: 20px;
+}
+
+.footer-brand:hover{
+    color: whitesmoke;
+}
+
+.left-item{
+    grid-template-rows: 1fr;
+    grid-template-columns: 30px 1fr;
+}
+
+.left-item i{
+    color: rgb(163, 163, 163);
+}
+
+.footer-links{
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+.footer-links a:hover,
+.left-item a:hover,
+.footer-icons a:hover{
+    color: rgb(70, 223, 210);
+    transition: all 0.2s ease-out;
+    text-decoration: underline;
+}
+
+.footer-company-about p{
+    margin-left: 20px
+}
+
+.footer-icons{
+    margin: 30px 10px;
+    text-align: center;
+}
+
+.footer-icons a{
+    margin: 10px;
+}
+
+.copyright{
+    text-align: center;
+}
+/* //================================================/ */
+/* //============Media Queries====================/ */
+@media (max-width: 768px) {
+
+	.footer-top {
+		display: grid;
+	    grid-template-columns: 1fr;
+	}
+
+	.footer-container, .footer-center h5{
+		text-align: center;
+	}
+
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-item{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .footer-links{
+        margin-right: 20px;
+    }
+}
